@@ -38,7 +38,8 @@ uv sync
 - **Create and Activate environment:**
 ```bash 
 python3 -m venv .venv
-source .venv/bin/activate```
+source .venv/bin/activate
+```
 - **Install the tool in editable mode:**
 ```bash 
 pip install -e .
@@ -47,19 +48,34 @@ pip install -e .
 ## How to Run
 
 ### The Global Command
-Run from anywhere in your terminal (while the environment is active): ```pdf-convert-to-readable "/path/to/your/file.pdf"```
-### Using uv run (No activation required): ```uv run pdf-convert-to-readable "/path/to/your/file.pdf"```
-### The Direct Python Way: ```python main.py "/path/to/your/file.pdf"```
+Run from anywhere in your terminal (while the environment is active): 
+```bash
+pdf-convert-to-readable "/path/to/your/file.pdf"
+```
+### Using uv run (No activation required): 
+```bash
+uv run pdf-convert-to-readable "/path/to/your/file.pdf"
+```
+### The Direct Python Way: 
+```bash 
+python main.py "/path/to/your/file.pdf"
+```
 
 ## Troubleshooting
 
 - **PDFInfoNotInstalledError:** 
     **Error:** Unable to get page count. Is poppler installed and in PATH?
-    **Fix:** brew install poppler
+    **Fix:** 
+```bash
+    brew install poppler
+```
 - **TesseractNotFoundError:**
     **Error:** tesseract is not installed or it's not in your PATH
     **Fix:**
-    - Install Tesseract: brew install tesseract
+    - Install Tesseract: 
+```bash
+brew install tesseract
+```
     - Verify path with which tesseract (usually /opt/homebrew/bin/tesseract).
     - Ensure main.py matches this path.
 - **Permission Denied:**
