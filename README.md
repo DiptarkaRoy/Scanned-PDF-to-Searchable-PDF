@@ -24,8 +24,10 @@ brew install poppler tesseract
 ## 📦 Setup & Installation
 
 ### Using uv
-- Install uv: ```bash
-brew install uv```
+- Install uv:
+```bash
+brew install uv
+```
 - Setup the Project:
     Run this inside the project folder to create the environment and install dependencies instantly.
         ```uv sync```
