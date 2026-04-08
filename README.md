@@ -70,23 +70,23 @@ python main.py "/path/to/your/file.pdf"
 brew install poppler
 ```
 - **TesseractNotFoundError:**
-    **Error:** tesseract is not installed or it's not in your PATH
-    **Fix:** 
-    - Install Tesseract:
-    - Verify path with which tesseract (usually /opt/homebrew/bin/tesseract).
-    - Ensure main.py matches this path. 
+    - **Error:** tesseract is not installed or it's not in your PATH
+    - **Fix:** 
+        - Install Tesseract:
+        - Verify path with which tesseract (usually /opt/homebrew/bin/tesseract).
+        - Ensure main.py matches this path. 
 ```bash
 brew install tesseract
 ```    
 - **Permission Denied:**
-    **Error:** zsh: permission denied: pdf-convert-to-readable
-    **Fix:** 
+    - **Error:** zsh: permission denied: pdf-convert-to-readable
+    - **Fix:** 
 ```bash
 chmod +x main.py
 ```
 - **Memory/Thermal Throttling:**
-    **Issue:** MacBook Air M3 gets warm on very large files.
-    **Fix:** Reduce WORKERS = 4 in main.py to lower CPU load.
+    - **Issue:** MacBook Air M3 gets warm on very large files.
+    - **Fix:** Reduce WORKERS = 4 in main.py to lower CPU load.
 
 ß## ⚙️ Configuration
 The tool is pre-configured for MacBook Air M3 (24GB RAM):
