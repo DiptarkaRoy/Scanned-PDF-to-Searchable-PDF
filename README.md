@@ -67,7 +67,7 @@ python main.py "/path/to/your/file.pdf"
     **Error:** Unable to get page count. Is poppler installed and in PATH?
     **Fix:** 
 ```bash
-    brew install poppler
+brew install poppler
 ```
 - **TesseractNotFoundError:**
     **Error:** tesseract is not installed or it's not in your PATH
