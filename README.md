@@ -88,7 +88,7 @@ chmod +x main.py
     - **Issue:** MacBook Air M3 gets warm on very large files.
     - **Fix:** Reduce WORKERS = 4 in main.py to lower CPU load.
 
-ß## ⚙️ Configuration
+## ⚙️ Configuration
 The tool is pre-configured for MacBook Air M3 (24GB RAM):
 - **Workers:** 8 parallel processes.
 - **DPI:** 200 (Optimal balance).
