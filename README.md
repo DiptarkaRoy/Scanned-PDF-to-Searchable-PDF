@@ -75,7 +75,6 @@ brew install poppler
     - Install Tesseract: 
 ```bash
 brew install tesseract
-```
     - Verify path with which tesseract (usually /opt/homebrew/bin/tesseract).
     - Ensure main.py matches this path.
 - **Permission Denied:**
