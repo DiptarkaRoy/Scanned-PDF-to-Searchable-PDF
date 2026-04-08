@@ -36,10 +36,13 @@ uv sync
 
 ### Using standard pip
 - **Create and Activate environment:**
-    ```python3 -m venv .venv```
-    ```source .venv/bin/activate```
+```bash 
+python3 -m venv .venv
+source .venv/bin/activate```
 - **Install the tool in editable mode:**
-    ```pip install -e .```
+```bash 
+pip install -e .
+```
 
 ## How to Run
 
