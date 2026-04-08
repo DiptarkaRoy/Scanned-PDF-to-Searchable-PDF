@@ -71,12 +71,13 @@ brew install poppler
 ```
 - **TesseractNotFoundError:**
     **Error:** tesseract is not installed or it's not in your PATH
-    **Fix:**
-    - Install Tesseract: 
+    **Fix:** 
+    - Install Tesseract:
+    - Verify path with which tesseract (usually /opt/homebrew/bin/tesseract).
+    - Ensure main.py matches this path. 
 ```bash
 brew install tesseract
-    - Verify path with which tesseract (usually /opt/homebrew/bin/tesseract).
-    - Ensure main.py matches this path.
+```    
 - **Permission Denied:**
     **Error:** zsh: permission denied: pdf-convert-to-readable
     **Fix:** 
