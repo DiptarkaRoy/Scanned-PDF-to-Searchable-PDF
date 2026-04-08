@@ -1,0 +1,20 @@
+[project]
+name = "scanned-pdf-to-searchable-pdf"
+version = "0.1.0"
+description = "A high-speed parallelized OCR converter for scanned documents."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pdf2image>=1.17.0",
+    "pypdf2>=3.0.1",
+    "pytesseract>=0.3.13",
+    "tqdm>=4.67.3",
+]
+
+[project.scripts]
+# This maps the command to the main() function in your main.py file
+pdf-convert-to-readable = "main:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
