@@ -30,7 +30,9 @@ brew install uv
 ```
 - Setup the Project:
     Run this inside the project folder to create the environment and install dependencies instantly.
-        ```uv sync```
+        ```bash
+        uv sync
+        ```
 
 ### Using standard pip
 - **Create and Activate environment:**
