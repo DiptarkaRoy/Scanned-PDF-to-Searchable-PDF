@@ -80,12 +80,15 @@ brew install tesseract
     - Ensure main.py matches this path.
 - **Permission Denied:**
     **Error:** zsh: permission denied: pdf-convert-to-readable
-    **Fix:** chmod +x main.py
+    **Fix:** 
+```bash
+chmod +x main.py
+```
 - **Memory/Thermal Throttling:**
     **Issue:** MacBook Air M3 gets warm on very large files.
     **Fix:** Reduce WORKERS = 4 in main.py to lower CPU load.
 
-## ⚙️ Configuration
+ß## ⚙️ Configuration
 The tool is pre-configured for MacBook Air M3 (24GB RAM):
 - **Workers:** 8 parallel processes.
 - **DPI:** 200 (Optimal balance).
